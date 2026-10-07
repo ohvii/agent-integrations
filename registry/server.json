@@ -1,0 +1,44 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ohvii/ohvii",
+  "title": "Ohvii",
+  "description": "Find homes with your AI, then use Ohvii to carry the purchase from listing to close.",
+  "version": "1.0.0",
+  "websiteUrl": "https://ohvii.com/developers",
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/ohvii/gemini-extension/v1.0.0/assets/icon.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "1024x1024"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://ohvii.com/api/mcp"
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "com.ohvii": {
+        "about": "Buy a California home through the AI you already use. Research homes, compare sales and review disclosures, then prepare offers and counters. Generate purchase agreements, addenda and repair requests, and track deadlines with guidance through closing. You choose the terms, review documents, sign securely and approve delivery.",
+        "starterPrompts": [
+          "Help me find homes that fit my budget and what I’m looking for.",
+          "Compare recent sales so I can decide what to offer for this home.",
+          "Review this home’s disclosures, explain the risks, and help me plan inspections or repair requests.",
+          "Help me prepare an offer for this home.",
+          "Help me evaluate this counteroffer and prepare a response.",
+          "What do I need to complete before closing, and what’s due next?"
+        ],
+        "authentication": "OAuth 2.1 with dynamic client registration",
+        "connectorSource": "https://github.com/ohvii/agent-integrations",
+        "sourceScope": "Public connector packages and buyer workflow instructions only; hosted application and backend are private.",
+        "supportUrl": "https://ohvii.com/support",
+        "privacyUrl": "https://ohvii.com/privacy",
+        "termsUrl": "https://ohvii.com/terms"
+      }
+    }
+  }
+}

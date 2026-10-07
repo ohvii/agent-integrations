@@ -1,0 +1,67 @@
+name: Publish Ohvii to MCP Registry
+
+on:
+  workflow_dispatch:
+    inputs:
+      metadata_sha256:
+        description: SHA-256 of the owner-approved registry/server.json
+        required: true
+        type: string
+
+permissions: {}
+
+concurrency:
+  group: official-mcp-registry
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.repository == 'ohvii/agent-integrations' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - name: Check out the approved metadata
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          persist-credentials: false
+
+      - name: Verify the approved metadata checksum
+        env:
+          EXPECTED_METADATA_SHA256: ${{ inputs.metadata_sha256 }}
+        run: |
+          [[ "$EXPECTED_METADATA_SHA256" =~ ^[a-f0-9]{64}$ ]]
+          printf '%s  %s\n' "$EXPECTED_METADATA_SHA256" 'registry/server.json' | sha256sum --check
+
+      - name: Install the official pinned publisher
+        run: |
+          curl --fail --silent --show-error --location --retry 2 \
+            https://github.com/modelcontextprotocol/registry/releases/download/v1.8.1/mcp-publisher_linux_amd64.tar.gz \
+            --output "$RUNNER_TEMP/mcp-publisher.tar.gz"
+          printf '%s  %s\n' 'a06c9096dcb9727c13555b6be26c7effa707b01f06a4c561ba7a3635443cf2cc' "$RUNNER_TEMP/mcp-publisher.tar.gz" | sha256sum --check
+          tar -xzf "$RUNNER_TEMP/mcp-publisher.tar.gz" -C "$RUNNER_TEMP" mcp-publisher
+
+      - name: Validate and publish using organization identity
+        run: |
+          "$RUNNER_TEMP/mcp-publisher" validate registry/server.json
+          "$RUNNER_TEMP/mcp-publisher" login github-oidc
+          "$RUNNER_TEMP/mcp-publisher" publish registry/server.json
+
+      - name: Verify the live Registry record
+        run: |
+          python3 - <<'PY'
+          import json, urllib.parse, urllib.request
+          from pathlib import Path
+          expected = json.loads(Path('registry/server.json').read_text())
+          name = urllib.parse.quote(expected['name'], safe='')
+          version = urllib.parse.quote(expected['version'], safe='')
+          url = f'https://registry.modelcontextprotocol.io/v0.1/servers/{name}/versions/{version}'
+          with urllib.request.urlopen(url, timeout=30) as response:
+              record = json.load(response)
+          actual = record['server']
+          for key, value in expected.items():
+              assert actual.get(key) == value, f'Published metadata mismatch: {key}'
+          print(f'Verified {expected["name"]} {expected["version"]}: {url}')
+          PY
