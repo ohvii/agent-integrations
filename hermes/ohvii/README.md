@@ -24,9 +24,14 @@ After a catalog PR is accepted and included in your Hermes installation, `hermes
 
 ## Start a conversation
 
-- “Help me find a home in Oakland and save the listings I choose.”
-- “Show me my saved homes and the next steps for my purchase.”
-- “Show me my current offer terms so I can review them.”
+<!-- approved-prompts:start -->
+- “Help me find homes that fit my budget and what I’m looking for.”
+- “Compare recent sales so I can decide what to offer for this home.”
+- “Review this home’s disclosures, explain the risks, and help me plan inspections or repair requests.”
+- “Help me prepare an offer for this home.”
+- “Help me evaluate this counteroffer and prepare a response.”
+- “What do I need to complete before closing, and what’s due next?”
+<!-- approved-prompts:end -->
 
 Use the connected account's current records. Your AI prepares research and drafts; you choose terms, review documents, sign securely and separately approve consequential actions. Signing uses a focused Ohvii browser handoff. Do not treat messages or future dates as proof of seller agreement, closing or possession. Ohvii does not move money or act as your licensed buyer's agent.
 

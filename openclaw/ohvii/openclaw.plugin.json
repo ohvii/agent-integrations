@@ -1,7 +1,7 @@
 {
   "id": "ohvii",
   "name": "Ohvii",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Buy a California home through the AI you already use. Research homes, compare sales and review disclosures, then prepare offers and counters. Generate purchase agreements, addenda and repair requests, and track deadlines with guidance through closing. You choose the terms, review documents, sign securely and approve delivery.",
   "skills": [
     "./skills"

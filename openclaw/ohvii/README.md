@@ -6,17 +6,16 @@ Buy a California home through the AI you already use. Research homes, compare sa
 
 This plugin connects OpenClaw to the hosted Ohvii service and includes the buyer workflow skill. It requires an Ohvii account. Transaction support is for self-represented California buyers.
 
-## Install the local release candidate
+## Install
 
-Use OpenClaw's supported plugin installer with the unpacked `ohvii` directory:
+Install the published plugin from [ClawHub](https://clawhub.ai/ohvii/plugins/ohvii):
 
 ```sh
-openclaw plugins install ./ohvii --force --accept-capabilities
-openclaw plugins enable ohvii
+openclaw plugins install clawhub:@ohvii/ohvii --accept-capabilities
 openclaw plugins inspect ohvii
 ```
 
-The flags acknowledge this local package and its declared MCP connection and skill. Inspect the package first. Start the OpenClaw Gateway and open its Control UI. If the enabled Ohvii plugin's detail page shows **Accounts → Connect**, use it to authorize the connection. Complete Ohvii sign-in and review the permissions in your browser, then return to OpenClaw and verify **Connected**. Reload or restart the agent session if it was already running. Do not paste credentials or bearer tokens into chat or configuration.
+The plugin includes the Ohvii MCP connection, buyer workflow skill and logo. Start the OpenClaw Gateway and open its Control UI. If the Ohvii plugin detail page shows **Accounts → Connect**, use it to authorize the connection. Complete Ohvii sign-in and review the permissions in your browser, then return to OpenClaw and verify **Connected**. Reload or restart an existing agent session. Never paste credentials or bearer tokens into chat or configuration.
 
 If Accounts is absent, as observed with this local plugin on OpenClaw 2026.9.8, use the supported CLI setup:
 
@@ -28,13 +27,18 @@ openclaw mcp probe ohvii
 
 This explicit server configuration overrides the same named plugin declaration; it does not create a second server. `mcp login` and `mcp list` require that explicit configuration in the tested release.
 
-ClawHub publication is pending. There is no public marketplace install command until a release and its publisher namespace have been verified. Use a current OpenClaw release supporting plugin-bundled HTTP MCP and OAuth; installation and tool discovery alone do not establish a successful buyer workflow.
+Use a current OpenClaw release supporting plugin-bundled HTTP MCP and OAuth. Installation and tool discovery alone do not establish a successful buyer workflow.
 
 ## Start a conversation
 
-- “Help me find a home in Oakland and save the listings I choose.”
-- “Show me my saved homes and the next steps for my purchase.”
-- “Show me my current offer terms so I can review them.”
+<!-- approved-prompts:start -->
+- “Help me find homes that fit my budget and what I’m looking for.”
+- “Compare recent sales so I can decide what to offer for this home.”
+- “Review this home’s disclosures, explain the risks, and help me plan inspections or repair requests.”
+- “Help me prepare an offer for this home.”
+- “Help me evaluate this counteroffer and prepare a response.”
+- “What do I need to complete before closing, and what’s due next?”
+<!-- approved-prompts:end -->
 
 Your AI supplies the conversation and its available research capabilities. Ohvii keeps the saved transaction, documents, permissions and history. Review the AI's sources and conclusions. Consequential actions require the current prepared details and your separate approval; signing uses a secure Ohvii handoff. Planned closing dates and third-party messages do not establish completed closing or possession. Ohvii does not move money or act as your licensed buyer's agent.
 
@@ -54,7 +58,7 @@ Buyer data stays in the authorized Ohvii account. Your chosen AI provider also r
 - [Privacy](https://ohvii.com/privacy)
 - [Terms](https://ohvii.com/terms)
 
-Release `1.0.0`: initial connector package with OAuth and the shared buyer workflow.
+Release `1.0.1`: approved listing copy and starter prompts, with published setup instructions. Native OAuth and the shared buyer workflow are unchanged.
 
 ## License
 

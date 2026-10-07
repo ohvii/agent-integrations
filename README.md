@@ -6,10 +6,10 @@ This repository contains the connector packages and buyer workflow instructions 
 
 | Client | Setup | Distribution status |
 | --- | --- | --- |
-| OpenClaw | [Plugin and connection setup](openclaw/ohvii/README.md) | ClawHub publication pending |
-| Hermes | [Connection and companion skill](hermes/ohvii/README.md) | Optional MCP catalog submission pending |
+| OpenClaw | [Plugin and connection setup](openclaw/ohvii/README.md) | [Published on ClawHub](https://clawhub.ai/ohvii/plugins/ohvii) |
+| Hermes | [Connection and companion skill](hermes/ohvii/README.md) | [Catalog PR submitted](https://github.com/NousResearch/hermes-agent/pull/134371); awaiting Nous review |
 
-The initial public package version is `1.0.0`. Source availability is separate from marketplace approval. The clients use OAuth to connect to `https://ohvii.com/api/mcp`; sign in through the native flow and review the requested permissions.
+The first OpenClaw release was `1.0.0`; the current source prepares its `1.0.1` copy update. The Hermes catalog candidate remains `1.0.0`. Source availability is separate from marketplace approval. The clients use OAuth to connect to `https://ohvii.com/api/mcp`; sign in through the native flow and review the requested permissions.
 
 ## License and service
 
