@@ -8,8 +8,11 @@ This repository contains the connector packages and buyer workflow instructions 
 | --- | --- | --- |
 | OpenClaw | [Plugin and connection setup](openclaw/ohvii/README.md) | [Published on ClawHub](https://clawhub.ai/ohvii/plugins/ohvii) |
 | Hermes | [Connection and companion skill](hermes/ohvii/README.md) | [Catalog PR submitted](https://github.com/NousResearch/hermes-agent/pull/134371); awaiting Nous review |
+| Gemini CLI | [Extension and connection setup](https://github.com/ohvii/gemini-extension) | [Release 1.0.1 published](https://github.com/ohvii/gemini-extension/releases/tag/v1.0.1); Google gallery indexing not yet verified |
 
 The current published OpenClaw release is `1.0.1`. The Hermes catalog candidate remains `1.0.0` and awaits upstream review. The clients use OAuth to connect to `https://ohvii.com/api/mcp`; sign in through the native flow and review the requested permissions.
+
+Gemini CLI requires supported business licensing or paid API access; Google directs consumer Google accounts to Antigravity CLI. See the linked Gemini setup guide for current account requirements. Gemini extension installation has been verified; authenticated buyer workflows and Antigravity compatibility remain unverified.
 
 ## License and service
 
