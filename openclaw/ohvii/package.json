@@ -1,0 +1,34 @@
+{
+  "name": "@ohvii/ohvii",
+  "version": "1.0.0",
+  "description": "Find homes with your AI, then use Ohvii to research a California home and carry the purchase from listing to close.",
+  "type": "module",
+  "author": "Ohvii",
+  "homepage": "https://ohvii.com",
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohvii/agent-integrations.git",
+    "directory": "openclaw/ohvii"
+  },
+  "files": [
+    "index.mjs",
+    "openclaw.plugin.json",
+    "skills",
+    "assets",
+    "README.md",
+    "LICENSE"
+  ],
+  "openclaw": {
+    "extensions": [
+      "./index.mjs"
+    ],
+    "compat": {
+      "pluginApi": ">=2026.9.5",
+      "minGatewayVersion": "2026.9.5"
+    },
+    "build": {
+      "openclawVersion": "2026.9.8"
+    }
+  }
+}
