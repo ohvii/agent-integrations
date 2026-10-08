@@ -12,6 +12,8 @@ This repository contains the connector packages and buyer workflow instructions 
 
 The current published OpenClaw release is `1.0.1`. The Hermes catalog candidate remains `1.0.0` and awaits upstream review. The clients use OAuth to connect to `https://ohvii.com/api/mcp`; sign in through the native flow and review the requested permissions.
 
+The hosted service is also published in the [official MCP Registry](https://registry.modelcontextprotocol.io/?q=io.github.ohvii%2Fohvii) as `io.github.ohvii/ohvii` version `1.0.0`. See the [registry metadata and publication record](registry/README.md).
+
 Gemini CLI requires supported business licensing or paid API access; Google directs consumer Google accounts to Antigravity CLI. See the linked Gemini setup guide for current account requirements. Gemini extension installation has been verified; authenticated buyer workflows and Antigravity compatibility remain unverified.
 
 ## License and service

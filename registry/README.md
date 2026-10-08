@@ -1,5 +1,7 @@
 # Ohvii MCP Registry metadata
 
+**Published October 7, 2026.** The [official MCP Registry listing](https://registry.modelcontextprotocol.io/?q=io.github.ohvii%2Fohvii) is active under `io.github.ohvii/ohvii`, version `1.0.0`. All submitted fields were verified against the [live API record](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.ohvii%2Fohvii/versions/1.0.0). Publication succeeded in [GitHub Actions run 37723522899](https://github.com/ohvii/agent-integrations/actions/runs/37723522899).
+
 `server.json` describes the hosted Ohvii MCP service using its approved descriptions, six starter prompts, public support links and logo reference. It contains no application source, credentials or buyer records.
 
 The metadata submitted to the [official MCP Registry](https://registry.modelcontextprotocol.io) is dedicated to CC0 under the [Registry terms](https://modelcontextprotocol.io/registry/terms-of-service). Referenced connector packages and artwork retain their own licenses.
