@@ -1,7 +1,7 @@
 {
   "name": "@ohvii/ohvii",
-  "version": "1.0.1",
-  "description": "Find homes with your AI, then use Ohvii to carry the purchase from listing to close.",
+  "version": "1.0.2",
+  "description": "Find homes with your AI, then use a free Ohvii account to carry the purchase from listing to close.",
   "type": "module",
   "author": "Ohvii",
   "homepage": "https://ohvii.com",

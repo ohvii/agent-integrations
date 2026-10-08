@@ -1,10 +1,10 @@
 # Ohvii for OpenClaw
 
 <!-- approved-about:start -->
-Buy a California home through the AI you already use. Research homes, compare sales and review disclosures, then prepare offers and counters. Generate purchase agreements, addenda and repair requests, and track deadlines with guidance through closing. You choose the terms, review documents, sign securely and approve delivery.
+Buy a California home through the AI you already use. Research homes, compare sales and review disclosures, then prepare offers and counters. Generate purchase agreements, addenda and repair requests, and track deadlines with guidance through closing. You choose the terms, review documents, sign securely and approve delivery. Requires a free Ohvii account.
 <!-- approved-about:end -->
 
-This plugin connects OpenClaw to the hosted Ohvii service and includes the buyer workflow skill. It requires an Ohvii account. Transaction support is for self-represented California buyers.
+This plugin connects OpenClaw to the hosted Ohvii service and includes the buyer workflow skill. It requires a free Ohvii account. Transaction support is for self-represented California buyers.
 
 ## Install
 
@@ -58,7 +58,7 @@ Buyer data stays in the authorized Ohvii account. Your chosen AI provider also r
 - [Privacy](https://ohvii.com/privacy)
 - [Terms](https://ohvii.com/terms)
 
-Release `1.0.1`: approved listing copy and starter prompts, with published setup instructions. Native OAuth and the shared buyer workflow are unchanged.
+Release `1.0.2`: descriptions now explicitly identify the required Ohvii account as free. Native OAuth and the shared buyer workflow are unchanged.
 
 ## License
 

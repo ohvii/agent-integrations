@@ -1,6 +1,6 @@
 # Ohvii agent integrations
 
-Buy a California home through the AI you already use. Research homes, compare sales and review disclosures, then prepare offers and counters. Generate purchase agreements, addenda and repair requests, and track deadlines with guidance through closing. You choose the terms, review documents, sign securely and approve delivery.
+Buy a California home through the AI you already use. Research homes, compare sales and review disclosures, then prepare offers and counters. Generate purchase agreements, addenda and repair requests, and track deadlines with guidance through closing. You choose the terms, review documents, sign securely and approve delivery. Requires a free Ohvii account.
 
 This repository contains the connector packages and buyer workflow instructions for the hosted Ohvii service. Transaction support is for self-represented California buyers.
 

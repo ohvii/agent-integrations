@@ -1,10 +1,10 @@
 # Ohvii for Hermes
 
 <!-- approved-about:start -->
-Buy a California home through the AI you already use. Research homes, compare sales and review disclosures, then prepare offers and counters. Generate purchase agreements, addenda and repair requests, and track deadlines with guidance through closing. You choose the terms, review documents, sign securely and approve delivery.
+Buy a California home through the AI you already use. Research homes, compare sales and review disclosures, then prepare offers and counters. Generate purchase agreements, addenda and repair requests, and track deadlines with guidance through closing. You choose the terms, review documents, sign securely and approve delivery. Requires a free Ohvii account.
 <!-- approved-about:end -->
 
-Connect Hermes to the hosted Ohvii MCP service using your Ohvii account. Transaction support is for self-represented California buyers. The catalog submission is pending; this package does not claim Nous approval.
+Connect Hermes to the hosted Ohvii MCP service using your free Ohvii account. Transaction support is for self-represented California buyers. The catalog submission is pending; this package does not claim Nous approval.
 
 ## Connect before catalog publication
 
