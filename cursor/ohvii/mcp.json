@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "ohvii": {
+      "url": "https://ohvii.com/api/mcp",
+      "auth": {
+        "CLIENT_ID": "ohvii_client_933a20b7-2765-4678-b48d-5cf5523b9321"
+      }
+    }
+  }
+}

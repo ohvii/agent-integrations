@@ -1,0 +1,18 @@
+{
+  "name": "ohvii",
+  "owner": {
+    "name": "Ohvii",
+    "email": "support@ohvii.com"
+  },
+  "metadata": {
+    "description": "Find homes with your AI, then use a free Ohvii account to carry the purchase from listing to close.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "ohvii",
+      "source": "cursor/ohvii",
+      "description": "Find homes with your AI, then use a free Ohvii account to carry the purchase from listing to close."
+    }
+  ]
+}
