@@ -6,7 +6,7 @@ This repository contains the connector packages and buyer workflow instructions 
 
 | Client | Setup | Distribution status |
 | --- | --- | --- |
-| Cursor / Grok Bot | [Plugin and connection setup](cursor/ohvii/README.md) | Version `1.0.0` prepared; publisher application pending |
+| Cursor / Grok Bot | [Plugin and connection setup](cursor/ohvii/README.md) | Version `1.0.0` submitted October 8, 2026; awaiting provider review |
 | OpenClaw | [Plugin and connection setup](openclaw/ohvii/README.md) | [Published on ClawHub](https://clawhub.ai/ohvii/plugins/ohvii) |
 | Hermes | [Connection and companion skill](hermes/ohvii/README.md) | [Catalog PR submitted](https://github.com/NousResearch/hermes-agent/pull/134371); awaiting Nous review |
 | Gemini CLI | [Extension and connection setup](https://github.com/ohvii/gemini-extension) | [Release 1.0.2 published](https://github.com/ohvii/gemini-extension/releases/tag/v1.0.2); Google gallery indexing not yet verified |
